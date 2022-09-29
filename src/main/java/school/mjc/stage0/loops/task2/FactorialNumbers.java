@@ -5,15 +5,13 @@ public class FactorialNumbers {
         int factorial = 1;
         int count = 0;
         while (count <= printToInclusive){
-            int check = 1;
-            factorial = 1;
-            while (check <= count) {
-                factorial *= check;
-                check++;
+            if (count == 0){
+                factorial = 1;
+            } else {
+                factorial *= count;
             }
-            System.out.println(factorial);
             count++;
-
+            System.out.println(factorial);
         }
         }
     }

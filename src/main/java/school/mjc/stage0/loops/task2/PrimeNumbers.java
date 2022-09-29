@@ -6,7 +6,7 @@ public class PrimeNumbers {
     public void printPrimeNumbers(int printToInclusive) {
         int result = 2;
         while (result <= printToInclusive) {
-            int count = 0;
+            int count = 0; // счетчик того сколь раз число делитс€ без остатка
             int check = 1;
             while (check <= result / 2) {
                 if (result % check == 0) {
